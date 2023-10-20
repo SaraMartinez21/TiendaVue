@@ -24,11 +24,14 @@
                     <li>{{juego.nombre}}</li>
                     <p>{{juego.plataforma}}</p>
                     <button @click="carrito(index)">+</button>
-    
                 </div>
+                <button @click="cambiar('carrito')"></button>
             </div>
-            <div v-for="actual in juegoActual">
-                {{juegos[actual.id]}} -- {{actual.cantidad}} -- {{juegos[actual.id].precio*actual.cantidad}}€
+            
+            <div v-if="mostrar('carrito')">
+                <div v-for="actual in juegoActual">
+                    {{juegos[actual.id]}} -- {{actual.cantidad}} -- {{juegos[actual.id].precio * actual.cantidad}}€
+                </div>
             </div>
         
     </div>

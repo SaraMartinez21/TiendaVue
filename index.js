@@ -39,8 +39,10 @@ createApp({
         mostrar(idDiv){
             if (this.divActivo==idDiv) return true;
             else return false;
+        },
+        cambiar(nuevoDiv){
+            this.divActivo=nuevoDiv;
         }
-
     }
 
 }).mount('#app');
