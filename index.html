@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div v-if="mostrar('portada')">
+            <h1>Listado de pelicula</h1>
+            <button @click="getJson()">Seccion Video Juegos</button>
+        </div>
+
+            <div class="lista" id="item-lista">
+                <div v-for="(juego, index) in juegos" :key="index">
+                    <li><img :src="juego.imagen"></li>
+                    <li>{{juego.nombre}}</li>
+                    <p>{{juego.plataforma}}</p>
+                    <button click="carrito(index)">+</button>
+    
+                </div>
+            </div>
+            <div v-for="actual in juegoActual">
+                {{juegos[actual.id]}} -- {{actual.cantidad}} -- {{juegos[actual.id].precio*actual.cantidad}}€
+            </div>
+        
+    </div>
+    <script type="module" src="index.js"> </script>
+</body>
+
+</html>
