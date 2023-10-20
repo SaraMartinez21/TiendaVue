@@ -16,21 +16,37 @@
             <button @click="getJson()">Seccion Video Juegos</button>
         </div>
 
-            <div class="lista" id="item-lista">
-                <div v-for="(juego, index) in juegos" :key="index">
-                    <li><img :src="juego.imagen"></li>
-                    <li>{{juego.nombre}}</li>
-                    <p>{{juego.plataforma}}</p>
-                    <button @click="insertar(index)">+</button>
-                </div>               
+        <div class="lista" id="item-lista">
+            <div v-for="(juego, index) in juegos" :key="index">
+                <li><img :src="juego.imagen"></li>
+                <li>{{juego.nombre}}</li>
+                <p>{{juego.plataforma}}</p>
+                <button @click="insertar(index)">+</button>
+                <button @click="quitar(index)">-</button>
             </div>
-            <button @click="cambiar('carrito')">carrito</button>
-            <div v-if="mostrar('carrito')" >
-                <div v-for="actual in juegoActual">
-                    {{juegos[actual.id]}} -- {{actual.cantidad}} -- {{juegos[actual.id].precio * actual.cantidad}}€
-                </div>
+
+            <div>
+                <h2>Carrito</h2>
+                    <li v-for="actual in juegoActual">
+                        {{juegos[actual.id].nombre}} - {{actual.cantidad}} -
+                        {{juegos[actual.id].precio * actual.cantidad}}€
+                    </li>
+                    <span>Total: {{calcularTotal()}}</span><br>
+                    <button @click="cambiar('portada')">Tienda</button>
+                    <button @click="cambiar('carrito')">Carrito</button>
             </div>
+        </div>
         
+
+        <div v-if="mostrar('carrito')">
+            <h2>Carrito</h2>
+                <li v-for="actual in juegoActual">
+                    {{juegos[actual.id].nombre}} - {{actual.cantidad}} -
+                    {{juegos[actual.id].precio * actual.cantidad}}€
+                </li>
+                <span>Total: {{calcularTotal()}}</span><br>
+                <button @click="cambiar('portada')">Tienda</button>
+        </div>
     </div>
     <script type="module" src="index.js"> </script>
 </body>
