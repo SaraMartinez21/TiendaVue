@@ -33,25 +33,25 @@
       {
         "nombre": "Call of Duty: Warzone",
         "plataforma": "PlayStation 5",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/call-of-duty-warzone.jpg",
         "precio": 0.00
       },
       {
         "nombre": "Assassin's Creed Valhalla",
         "plataforma": "Xbox Series X",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/valhalla.jpg",
         "precio": 34.99
       },
       {
         "nombre": "Minecraft",
         "plataforma": "PC",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/minecraft.jpg",
         "precio": 19.99
       },
       {
         "nombre": "Super Mario Odyssey",
         "plataforma": "Nintendo Switch",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/mario.jpg",
         "precio": 49.99
       },
       {
@@ -63,37 +63,37 @@
       {
         "nombre": "Horizon Zero Dawn",
         "plataforma": "PlayStation 5",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/GTA5.jpg",
         "precio": 39.99
       },
       {
         "nombre": "Among Us",
         "plataforma": "PC",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/Among_Us.jpg",
         "precio": 4.99
       },
       {
         "nombre": "Resident Evil Village",
         "plataforma": "Xbox Series X",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/Resident Evil Village.jpg",
         "precio": 44.99
       },
       {
         "nombre": "NBA 2K22",
         "plataforma": "PlayStation 5",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/NBA2K22.jpg",
         "precio": 49.99
       },
       {
         "nombre": "Animal Crossing: New Horizons",
         "plataforma": "Nintendo Switch",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/Animal Crossing.jpg",
         "precio": 54.99
       },
       {
         "nombre": "Hades",
         "plataforma": "PC",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/hades.jpg",
         "precio": 19.99
       },
       {
@@ -105,19 +105,19 @@
       {
         "nombre": "The Elder Scrolls V: Skyrim",
         "plataforma": "Xbox One",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/The Elder Scrolls V Skyrim.jpg",
         "precio": 29.99
       },
       {
         "nombre": "Celeste",
         "plataforma": "Nintendo Switch",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/celeste.jpg",
         "precio": 14.99
       },
       {
         "nombre": "Sekiro: Shadows Die Twice",
         "plataforma": "PC",
-        "imagen": "imagen/TLOZ.jpg",
+        "imagen": "imagen/sekiro.jpg",
         "precio": 39.99
       }
     ]

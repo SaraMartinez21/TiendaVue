@@ -7,7 +7,8 @@ createApp({
     data() {
         return {
             divActivo: 'portada',
-            juegos: []
+            juegos: [],
+            juegoActual: []
         }
     },
 
@@ -22,17 +23,17 @@ createApp({
 
         carrito(id){
 
-            const productoIncrementar = this.juegos.find(getJson().videojuegos == id);
+            const productoIncrementar = this.juegos.find(juego => juego.videojuegos === id);
 
             if(productoIncrementar){
                 productoIncrementar.cantidad+=1;
                 console.log(`Se ha incrementado la cantidad del producto ${id} en 1  unidades.`);
             }else{
-                this.productoIncrementar.push({id, cantidad: 1});
+                this.juegoActual.push({id, cantidad: 1});
                 console.log(`No se encontró un producto con el ID ${id}`);
               
             }
-            console.log(this.productoIncrementar);
+            console.log(this.juegoActual);
         },
 
         mostrar(idDiv){
