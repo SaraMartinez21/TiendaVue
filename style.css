@@ -57,3 +57,10 @@ button {
 p {
     font-weight: normal;
 }
+
+button .botontienda{
+    display: block;
+}
+.inicio{
+    display: block;
+}

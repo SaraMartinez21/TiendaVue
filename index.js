@@ -8,20 +8,20 @@ createApp({
         return {
             divActivo: 'portada',
             juegos: [],
-            juegoActual: []
+            juegoActual: [],
+            
         }
     },
 
     methods: {
         getJson() {
-            console.log('adios');
             getJuegos().then(nova => {
                 this.juegos = nova,
                     console.log(this.juegos)
             })
         },
 
-        carrito(id){
+        insertar(id){
 
             const productoIncrementar = this.juegos.find(juego => juego.videojuegos === id);
 
@@ -37,8 +37,7 @@ createApp({
         },
 
         mostrar(idDiv){
-            if (this.divActivo==idDiv) return true;
-            else return false;
+            return this.divActivo === idDiv;
         },
         cambiar(nuevoDiv){
             this.divActivo=nuevoDiv;
